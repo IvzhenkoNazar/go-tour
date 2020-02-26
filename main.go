@@ -18,7 +18,7 @@ func main() {
 }
 
 func mainPage(w http.ResponseWriter, r *http.Request) {
-	tmpl, err := template.ParseFiles("static/index.html")
+	tmpl, err := template.ParseFiles("index.html")
 	if err != nil {
 		http.Error(w, err.Error(), 400)
 		return
